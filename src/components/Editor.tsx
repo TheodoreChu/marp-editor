@@ -121,6 +121,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
           },
           () => {
             this.renderSlides();
+            this.loadSavedMode();
           }
         );
       },
@@ -203,7 +204,8 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
       if (debugMode) {
         console.log('loaded savedMode: ' + savedMode);
       }
-      if (savedMode) {
+      // We can't use if(savedMode) because it would return false for 0
+      if (typeof savedMode === 'number') {
         this.setModeFromModeType(savedMode);
       }
       this.setState(
@@ -426,6 +428,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
             className={this.state.mode.css}
             id={HtmlElementId.ColumnResizer}
           ></div>
+          <style id={HtmlElementId.MarpStyles}></style>
           <section
             className={this.state.mode.css}
             id={HtmlElementId.View}
@@ -433,7 +436,6 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
           ></section>
         </main>
       </div>,
-      <style id={HtmlElementId.MarpStyles}></style>,
       <div id={HtmlElementId.MarpContent}></div>,
     ];
   }
