@@ -4,7 +4,7 @@
 
 [![Release](https://img.shields.io/github/release/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/releases)
 [![License](https://img.shields.io/github/license/theodorechu/marp-editor?color=blue)](https://github.com/theodorechu/marp-editor/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/status-in%20development-red.svg)](https://marpeditor.com/#installation)
+[![Status](https://img.shields.io/badge/status-open%20beta-green.svg)](https://marpeditor.com/#installation)
 [![Cost](https://img.shields.io/badge/cost-free-darkgreen.svg)](https://marpeditor.com/#installation)
 [![GitHub issues](https://img.shields.io/github/issues/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/issues/)
 [![Slack](https://img.shields.io/badge/slack-standardnotes-CC2B5E.svg?style=flat&logo=slack)](https://standardnotes.org/slack)
@@ -19,16 +19,23 @@ The Marp Editor is an **unofficial** [editor](https://standardnotes.org/help/77/
 
 You can find the demo at [demo.marpeditor.com](https://demo.marpeditor.com) or learn more at [marpeditor.com](https://marpeditor.com).
 
-The Marp Editor is used to create presentation slides using [Marp](https://marp.app) and [Marpit Markdown](https://marpit.marp.app/markdown).
+The Marp Editor is used to create presentation slides using [Marpit Markdown](https://marpit.marp.app/markdown).
 
 For a full tutorial on how to use Marpit Markdown, please see the [official Marpit documentation](https://marpit.marp.app/markdown).
+
+The Marp Editor is built with React, TypeScript, Sass, and [Marp](https://marp.app).
+
+## Features
+
+- Three modes: Edit, Split, and View.
+- Save as PDF using Microsoft Edge and Chrome.
 
 ## Installation
 
 1. Register for an account at Standard Notes using the [Desktop App](https://standardnotes.org/download) or [Web app](https://app.standardnotes.org). Remember to use a strong and memorable password.
 2. In the bottom left corner of the app, click **Extensions**.
 3. Click **Import Extension**.
-4. To install the Beta version, paste this into the input box:
+4. Paste this into the input box:
    ```
    https://notes.theochu.com/p/PvmDopgufD
    ```
@@ -38,7 +45,7 @@ For a full tutorial on how to use Marpit Markdown, please see the [official Marp
    ```
 5. Press Enter or Return on your keyboard.
 6. Click **Install**.
-7. At the top of your note, click **Editor**, then click **Append Editor - Beta** (or **Alpha**).
+7. At the top of your note, click **Editor**, then click **Marp Editor**.
 8. When prompted to activate the extension, click **Continue**.
 
 After you have installed the editor on the web or desktop app, it will automatically sync to your [mobile app](https://standardnotes.org/download) after you sign in.
@@ -106,13 +113,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 #### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 #### Learn More
 
