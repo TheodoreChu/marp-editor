@@ -2,7 +2,7 @@ import React from 'react';
 import { EditorKit, EditorKitDelegate } from 'sn-editor-kit';
 import Marp from '@marp-team/marp-core';
 import { debounce } from 'lodash';
-import { PrintIcon } from './Icons';
+import { HelpIcon, DownloadIcon, PrintIcon } from './Icons';
 /** This is important */
 import '@marp-team/marp-core/lib/browser';
 
@@ -24,6 +24,8 @@ export enum HtmlElementId {
   MarpEditor = 'marp-editor',
   MarpStyles = 'marp-styles',
   View = 'view',
+  HelpButton = 'help-button',
+  DownloadButton = 'download-button',
   PrintButton = 'print-button',
 }
 
@@ -395,6 +397,21 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
               ))}
             </div>
           </div>
+          <a
+            href="https://marpeditor.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              className={'sk-button button sk-secondary-contrast icon-button'}
+              id={HtmlElementId.HelpButton}
+              title={'Help'}
+            >
+              <span>&nbsp;</span>
+              <HelpIcon role="button" />
+              <span>&nbsp;</span>
+            </button>
+          </a>
           <button
             className={'sk-button button sk-secondary-contrast icon-button'}
             id={HtmlElementId.PrintButton}

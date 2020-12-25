@@ -91,6 +91,18 @@ html {
     line-height: 20px;
     text-align: center;
     width: 50px;
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+    }
+  }
+
+  #help-button {
+    position: absolute;
+    right: 56.5px; // 1px + 50.5px + 5px
+    top: 5px;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 
   #print-button {
