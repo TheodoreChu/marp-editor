@@ -1,0 +1,21 @@
+@media print {
+  .print-url {
+    a[href]:after {
+      content: ' (' attr(href) ')';
+    }
+  }
+  .sn-component,
+  textarea {
+    outline: none;
+  }
+  #marp-editor {
+    display: none;
+  }
+  #marp-content {
+    display: block;
+  }
+  .marpit {
+    max-width: unset;
+    margin: 0px;
+  }
+}

@@ -1,0 +1,204 @@
+@import '~sn-stylekit/dist/stylekit.css';
+
+:root {
+  --sn-stylekit-font-size-editor: 16px;
+  --sn-stylekit-monospace-font: SFMono-Regular, Consolas, Liberation Mono, Menlo,
+    'Ubuntu Mono', courier, monospace;
+  --font-family: var(var(--sn-stylekit-sans-serif-font));
+}
+
+@media screen and (max-width: 650px) {
+  :root {
+    --sn-stylekit-font-size-editor: 18px;
+  }
+  h1 {
+    font-size: 1.75em; // is usually 2em
+  }
+}
+
+body,
+html {
+  background-color: transparent;
+  background-color: var(--sn-stylekit-background-color);
+  font-family: var(--sn-stylekit-monospace-font);
+  font-size: var(--sn-stylekit-base-font-size);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  // To prevent gray flash when focusing input on mobile Safari
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#marp-editor {
+  background-color: var(--sn-stylekit-editor-background-color);
+  color: var(--sn-stylekit-editor-foreground-color);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--sn-stylekit-font-size-editor);
+  height: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+
+  @media screen and (max-width: 420px) {
+    min-height: -webkit-fill-available;
+  }
+}
+
+.sn-component {
+  .sk-input.textarea {
+    padding: 9px 10px;
+    //max-width: inherit;
+    //width: calc(100% - 22px);
+    resize: vertical;
+    overflow-y: auto;
+    font-family: var(--sn-stylekit-sans-serif-font);
+    font-size: var(--sn-stylekit-font-size-editor);
+    line-height: 1.7;
+  }
+}
+
+#header {
+  border-bottom: 1px solid var(--sn-stylekit-border-color);
+  padding: 5px;
+  background-color: var(--sn-stylekit-background-color);
+  color: var(--sn-stylekit-foreground-color);
+
+  .segmented-buttons-container {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .button {
+    border: 1px solid var(--sn-component-inner-border-color);
+    border-radius: 0;
+    margin-right: 4px;
+    padding: 4px 12px;
+  }
+
+  .label {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 50px;
+  }
+
+  #print-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+  .icon-button {
+    display: inline-flex;
+    svg {
+      opacity: 0.75;
+      margin-top: auto;
+    }
+  }
+}
+
+#editor-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; // required for footer bar to display in Firefox
+}
+
+#editor {
+  background-color: var(--sn-stylekit-editor-background-color);
+  color: var(--sn-stylekit-editor-foreground-color);
+  font-size: var(--sn-stylekit-font-size-editor);
+  -webkit-overflow-scrolling: touch;
+  font-family: var(--sn-stylekit-monospace-font);
+
+  &.edit {
+    width: 100% !important;
+  }
+
+  &.split {
+    width: calc(50% - 28px);
+  }
+
+  &.view {
+    width: 0 !important;
+    padding: 0;
+    padding-left: 0;
+  }
+
+  flex-grow: 0;
+  border: 0px;
+  resize: none;
+  padding: 12px;
+}
+
+#column-resizer {
+  width: 8px;
+  background-color: var(--sn-stylekit-border-color);
+  cursor: col-resize;
+
+  &.edit,
+  &.view {
+    display: none;
+  }
+
+  //&.dragging {
+  //}
+}
+
+#view {
+  background-color: var(--sn-stylekit-background-color);
+  color: var(--sn-stylekit-foreground-color);
+  flex: 1;
+  font-family: var(--sn-stylekit-monospace-font);
+  overflow: auto;
+  padding: 12px;
+
+  &.edit {
+    width: 0 !important;
+    padding: 0;
+    padding-left: 0;
+  }
+
+  &.split {
+    width: calc(50% - 28px);
+  }
+
+  &.view {
+    width: 100% !important;
+  }
+  &.view.success {
+    text-align: center;
+  }
+  a {
+    color: var(--sn-stylekit-info-color);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#marp-content {
+  display: none;
+}
+.marpit {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import './print.scss';
+@import './dark.scss';
