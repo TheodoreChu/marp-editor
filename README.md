@@ -4,7 +4,7 @@
 
 [![Release](https://img.shields.io/github/release/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/releases)
 [![License](https://img.shields.io/github/license/theodorechu/marp-editor?color=blue)](https://github.com/theodorechu/marp-editor/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/status-open%20beta-green.svg)](https://marpeditor.com/#installation)
+[![Status](https://img.shields.io/badge/status-open%20beta-brightgreen.svg)](https://marpeditor.com/#installation)
 [![Cost](https://img.shields.io/badge/cost-free-darkgreen.svg)](https://marpeditor.com/#installation)
 [![GitHub issues](https://img.shields.io/github/issues/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/issues/)
 [![Slack](https://img.shields.io/badge/slack-standardnotes-CC2B5E.svg?style=flat&logo=slack)](https://standardnotes.org/slack)
