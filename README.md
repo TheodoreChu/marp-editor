@@ -21,6 +21,26 @@ You can find the demo at [demo.marpeditor.com](https://demo.marpeditor.com) or l
 
 The Marp Editor is used to create presentation slides using [Marp](https://marp.app).
 
+## Installation
+
+1. Register for an account at Standard Notes using the [Desktop App](https://standardnotes.org/download) or [Web app](https://app.standardnotes.org). Remember to use a strong and memorable password.
+2. In the bottom left corner of the app, click **Extensions**.
+3. Click **Import Extension**.
+4. To install the Beta version, paste this into the input box:
+   ```
+   https://notes.theochu.com/p/PvmDopgufD
+   ```
+   or paste this into the input box on **desktop**:
+   ```
+   https://raw.githubusercontent.com/TheodoreChu/marp-editor/main/public/demo.ext.json
+   ```
+5. Press Enter or Return on your keyboard.
+6. Click **Install**.
+7. At the top of your note, click **Editor**, then click **Append Editor - Beta** (or **Alpha**).
+8. When prompted to activate the extension, click **Continue**.
+
+After you have installed the editor on the web or desktop app, it will automatically sync to your [mobile app](https://standardnotes.org/download) after you sign in.
+
 ## Development
 
 **Prerequisites:** Install [Node.js](https://nodejs.org/en/), [Yarn](https://classic.yarnpkg.com/en/docs/install/), and [Git](https://github.com/git-guides/install-git) on your computer.
