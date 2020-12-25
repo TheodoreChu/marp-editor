@@ -1,0 +1,13 @@
+{
+  "identifier": "com.marp-editor.demo",
+  "name": "Marp Editor",
+  "content_type": "SN|Component",
+  "area": "editor-editor",
+  "version": "0.1.0",
+  "description": "Create presentations with Marp",
+  "url": "http://demo.marpeditor.com",
+  "download_url": "",
+  "latest_url": "https://raw.githubusercontent.com/TheodoreChu/marp-editor/main/public/demo.ext.json",
+  "marketing_url": "https://github.com/theodorechu/marp-editor",
+  "thumbnail_url": ""
+}
