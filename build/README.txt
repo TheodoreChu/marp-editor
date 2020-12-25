@@ -27,8 +27,9 @@ The Marp Editor is built with React, TypeScript, Sass, and [Marp](https://marp.a
 
 ## Features
 
+- Create presentation slides using [Marpit Markdown](https://marpit.marp.app/markdown).
 - Three modes: Edit, Split, and View.
-- Save as PDF using Microsoft Edge and Chrome.
+- Save as PDF using Microsoft Edge or Chrome.
 
 ## Installation
 

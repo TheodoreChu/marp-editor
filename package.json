@@ -1,21 +1,23 @@
 {
   "name": "marp-editor",
   "version": "0.1.0",
-  "description": "Create presentations in Standard Notes with Marp",
+  "description": "Marp Editor for Standard Notes. Create presentations slides with Marpit Markdown",
   "keywords": [
     "Marp Editor",
     "Standard Notes",
     "Standard Notes Extensions",
-    "Marp"
+    "Marp",
+    "Marpit Markdown",
+    "KaTeX"
   ],
   "private": true,
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/theodorechu/marp-editor.git"
+    "url": "https://github.com/TheodoreChu/marp-editor.git"
   },
   "bugs": {
-    "url": "https://github.com/theodorechu/marp-editor/issues"
+    "url": "https://github.com/TheodoreChu/marp-editor/issues"
   },
   "sn": {
     "main": "build/index.html"
