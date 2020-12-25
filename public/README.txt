@@ -17,7 +17,7 @@
 
 The Marp Editor is an **unofficial** [editor](https://standardnotes.org/help/77/what-are-editors) for [Standard Notes](https://standardnotes.org), a free, [open-source](https://standardnotes.org/knowledge/5/what-is-free-and-open-source-software), and [end-to-end encrypted](https://standardnotes.org/knowledge/2/what-is-end-to-end-encryption) notes app.
 
-You can find the demo at [demo.marpeditor.com](https://demo.marpeditor.com) or learn more at [marpeditor.com](https://marpeditor.com).
+Try the demo at [demo.marpeditor.com](https://demo.marpeditor.com) or learn more at [marpeditor.com](https://marpeditor.com).
 
 The Marp Editor is used to create presentation slides using [Marpit Markdown](https://marpit.marp.app/markdown).
 
