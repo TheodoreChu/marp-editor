@@ -4,7 +4,7 @@
   --sn-stylekit-font-size-editor: 16px;
   --sn-stylekit-monospace-font: SFMono-Regular, Consolas, Liberation Mono, Menlo,
     'Ubuntu Mono', courier, monospace;
-  --font-family: var(var(--sn-stylekit-sans-serif-font));
+  --font-family: var(--sn-stylekit-monospace-font);
 }
 
 @media screen and (max-width: 650px) {

@@ -134,7 +134,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
   };
 
   saveNote = (text: string) => {
-    /** This will work in an SN context, but breaks the standalone editor,
+    /** This will work in an SN context, but may break the standalone editor,
      * so we need to catch the error
      */
     try {
@@ -157,6 +157,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
         text: text,
       },
       () => {
+        // Do not re-render slides in edit-only mode
         if (this.state.mode !== modes[0]) {
           if (this.saveTimer) {
             clearTimeout(this.saveTimer);
@@ -386,6 +387,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
                       ? 'selected info'
                       : 'sk-secondary-contrast')
                   }
+                  title={'Turn on ' + mode.label + ' Mode'}
                 >
                   <div className="label">{mode.label}</div>
                 </button>
@@ -396,6 +398,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
             className={'sk-button button sk-secondary-contrast icon-button'}
             id={HtmlElementId.PrintButton}
             onClick={() => this.print()}
+            title={'Print rendered slides'}
           >
             <span>&nbsp;</span>
             <PrintIcon role="button" />
