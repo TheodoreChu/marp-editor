@@ -4,7 +4,7 @@
   "content_type": "SN|Component",
   "area": "editor-editor",
   "version": "0.1.0",
-  "description": "Create presentations with Marp",
+  "description": "Create presentation slides with Marpit Markdown",
   "url": "http://localhost:3000/index.html",
   "download_url": "",
   "latest_url": "",

@@ -1,12 +1,14 @@
 {
   "name": "marp-editor",
   "version": "0.1.0",
-  "description": "Create presentations in Standard Notes with Marp",
+  "description": "Marp Editor for Standard Notes. Create presentation slides with Marpit Markdown",
   "keywords": [
     "Marp Editor",
     "Standard Notes",
     "Standard Notes Extensions",
-    "Marp"
+    "Marp",
+    "Marpit Markdown",
+    "KaTeX"
   ],
   "private": true,
   "license": "AGPL-3.0-or-later",
