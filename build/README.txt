@@ -19,7 +19,9 @@ The Marp Editor is an **unofficial** [editor](https://standardnotes.org/help/77/
 
 You can find the demo at [demo.marpeditor.com](https://demo.marpeditor.com) or learn more at [marpeditor.com](https://marpeditor.com).
 
-The Marp Editor is used to create presentation slides using [Marp](https://marp.app).
+The Marp Editor is used to create presentation slides using [Marp](https://marp.app) and [Marpit Markdown](https://marpit.marp.app/markdown).
+
+For a full tutorial on how to use Marpit Markdown, please see the [official Marpit documentation](https://marpit.marp.app/markdown).
 
 ## Installation
 
@@ -112,8 +114,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### Learn More
+#### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## License
+
+Copyright (c) Theodore Chu. All Rights Reserved. Licensed under [AGPL-3.0](https://github.com/TheodoreChu/marp-editor/blob/main/LICENSE) or later.
+
+## Acknowledgements
+
+Early stages of this editor were based heavily on the Standard Notes [Markdown Basic Editor](https://github.com/standardnotes/markdown-basic). The Markdown Basic Editor is licensed under AGPL-3.0 and is available for use through [Standard Notes Extended](https://standardnotes.org/extensions).
+
+## Further Resources
+
+- [GitHub](https://github.com/TheodoreChu/marp-editor) for the source code of the Marp Editor
+- [GitHub Issues](https://github.com/TheodoreChu/marp-editor/issues) for reporting issues concerning the Marp Editor
+- [Docs](https://docs.theochu.com/marp-editor) for how to use the Marp Editor
+- [Contact](https://theochu.com/contact) for how to contact the developer of the Marp Editor
+- [Marp Editor To do List](https://github.com/TheodoreChu/marp-editor/projects/1) for the roadmap of the Marp Editor
+- [Standard Notes Slack](https://standardnotes.org/slack) for connecting with the Standard Notes Community
+- [Standard Notes Help](https://standardnotes.org/help) for help with issues related to Standard Notes but unrelated to this editor
