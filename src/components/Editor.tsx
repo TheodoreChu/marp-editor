@@ -350,6 +350,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
   };
 
   print = () => {
+    this.renderSlides();
     const MarpContent = document.getElementById(HtmlElementId.MarpContent);
     if (MarpContent) {
       MarpContent.style['display'] = 'block';
