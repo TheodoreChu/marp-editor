@@ -83,9 +83,6 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
     emoji: {
       shortcode: true,
       unicode: false,
-      twemoji: {
-        base: '/resources/twemoji/',
-      },
     },
     math: {
       lib: 'katex',
@@ -94,10 +91,10 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
     minifyCSS: false,
     script: true,
 
-    // It can be included Marpit constructor options
-    //looseYAML: false,
+    // We can included Marpit constructor options
+    // https://marpit-api.marp.app/marpit
     markdown: {
-      breaks: false,
+      breaks: true, // Create a <br/> on new line
     },
   });
 
