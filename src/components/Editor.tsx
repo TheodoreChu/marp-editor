@@ -11,6 +11,8 @@ import '@marp-team/marp-core/browser';
 import '@marp-team/marp-core/lib/browser.cjs';
 import '@marp-team/marp-core/lib/marp';
 
+import { bespokeHtml, bespokeCss, bespokeScript } from '../vendor/bespoke';
+
 enum ComponentDataKey {
   Mode = 'mode',
 }
@@ -388,26 +390,39 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
   };
 
   downloadHtml = (fileName: string) => {
-    //const css = document.getElementById(HtmlElementId.MarpStyles)?.innerHTML;
-    const { html, css } = this.marp.render(this.state.text);
-    /*const marpit = document.getElementsByClassName('marpit');
+    //const { html, css } = this.marp.render(this.state.text);
+
     // This is to make the slides work with Bespoke
+    const css = document.getElementById(HtmlElementId.MarpStyles)?.innerHTML;
+    const marpit = document.getElementsByClassName('marpit');
     if (marpit[0]) {
       marpit[0].setAttribute('id', 'p');
     }
     const view = document.getElementById(HtmlElementId.View);
-    const html = view?.innerHTML;*/
+    const html = view?.innerHTML;
     const HtmlToDownload = `
     <!DOCTYPE html>
     <html lang="C">  
       <head>
+      <meta charset="UTF-8" />
+      <meta
+        name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0"
+      />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
         <title>${
           this.state.title ? this.state.title : 'Marp Presentation'
         }</title>
+        ${bespokeCss}
         <style>${css}</style>
       </head>
       <body>
-        ${html}        
+        ${bespokeHtml}
+        ${html}
+        ${bespokeScript}
       </body>
     </html>
     `;
