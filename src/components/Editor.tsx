@@ -401,6 +401,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
             href="https://marpeditor.com"
             target="_blank"
             rel="noopener noreferrer"
+            tabIndex={-1}
           >
             <button
               className={'sk-button button sk-secondary-contrast icon-button'}
