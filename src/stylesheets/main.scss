@@ -98,7 +98,16 @@ html {
 
   #help-button {
     position: absolute;
-    right: 56.5px; // 1px + 50.5px + 5px
+    right: 108px; // 1px + (50.5px + 1px) + (50.5px) + 5px
+    top: 5px;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  #download-button {
+    position: absolute;
+    right: 56.5px; // 1px + (50.5px) + 5px
     top: 5px;
     @media screen and (max-width: 500px) {
       display: none;

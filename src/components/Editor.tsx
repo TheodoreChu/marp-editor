@@ -65,6 +65,7 @@ export interface EditorInterface {
   mode: Mode;
   platform?: string;
   printUrl: boolean;
+  title?: string;
 }
 const debugMode = false;
 
@@ -72,6 +73,7 @@ const initialState = {
   mode: modes[1],
   printUrl: false,
   text: '',
+  title: '',
 };
 
 const keyMap = new Map();
@@ -365,6 +367,67 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
     }, 250);
   };
 
+  download = () => {
+    this.editorKit.internal.componentManager.streamContextItem((note: any) => {
+      if (note.content.title) {
+        this.setState(
+          {
+            title: note.content.title,
+          },
+          () => {
+            this.downloadHtml(this.state.title + '.html');
+          }
+        );
+      } else {
+        this.downloadHtml('untitled-marp-presentation.html');
+      }
+    });
+    if (this.state.platform === undefined) {
+      this.downloadHtml('untitled-marp-presentation.html');
+    }
+  };
+
+  downloadHtml = (fileName: string) => {
+    //const css = document.getElementById(HtmlElementId.MarpStyles)?.innerHTML;
+    const { html, css } = this.marp.render(this.state.text);
+    /*const marpit = document.getElementsByClassName('marpit');
+    // This is to make the slides work with Bespoke
+    if (marpit[0]) {
+      marpit[0].setAttribute('id', 'p');
+    }
+    const view = document.getElementById(HtmlElementId.View);
+    const html = view?.innerHTML;*/
+    const HtmlToDownload = `
+    <!DOCTYPE html>
+    <html lang="C">  
+      <head>
+        <title>${
+          this.state.title ? this.state.title : 'Marp Presentation'
+        }</title>
+        <style>${css}</style>
+      </head>
+      <body>
+        ${html}        
+      </body>
+    </html>
+    `;
+
+    const downloadUrl = URL.createObjectURL(
+      new Blob([HtmlToDownload], { type: 'text/html;charset=utf-8' })
+    );
+    const link = document.createElement('a');
+
+    link.href = downloadUrl;
+    link.download = fileName;
+    link.style.display = 'none';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setTimeout(() => URL.revokeObjectURL(downloadUrl), 3000);
+  };
+
   render() {
     const { text } = this.state;
     return [
@@ -415,8 +478,18 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
           </a>
           <button
             className={'sk-button button sk-secondary-contrast icon-button'}
+            id={HtmlElementId.DownloadButton}
+            onClick={this.download}
+            title={'Download slides as HTML file'}
+          >
+            <span>&nbsp;</span>
+            <DownloadIcon role="button" />
+            <span>&nbsp;</span>
+          </button>
+          <button
+            className={'sk-button button sk-secondary-contrast icon-button'}
             id={HtmlElementId.PrintButton}
-            onClick={() => this.print()}
+            onClick={this.print}
             title={'Print rendered slides'}
           >
             <span>&nbsp;</span>
