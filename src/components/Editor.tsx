@@ -79,6 +79,8 @@ const initialState = {
 };
 
 const keyMap = new Map();
+let ScrollTopSplit = 0;
+let ScrollTopView = 0;
 
 export default class MarpEditor extends React.Component<{}, EditorInterface> {
   editorKit: any;
@@ -247,12 +249,32 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
   };
 
   changeMode = (mode: Mode) => {
+    /** Save the scrollTop for Split and View */
+    const view = document.getElementById(HtmlElementId.View);
+    if (view) {
+      if (this.state.mode === modes[1]) {
+        ScrollTopSplit = view.scrollTop;
+      }
+      if (this.state.mode === modes[2]) {
+        ScrollTopView = view.scrollTop;
+      }
+    }
     this.setState(
       {
         mode,
       },
       () => {
         this.renderSlides();
+        /** Load the scrollTop for Split and View */
+        const view = document.getElementById(HtmlElementId.View);
+        if (view) {
+          if (this.state.mode === modes[1]) {
+            view.scrollTop = ScrollTopSplit;
+          }
+          if (this.state.mode === modes[2]) {
+            view.scrollTop = ScrollTopView;
+          }
+        }
       }
     );
     this.logDebugMessage('changeMode mode: ', mode.type);

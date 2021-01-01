@@ -146,7 +146,7 @@ html {
   font-family: var(--sn-stylekit-monospace-font);
 
   &.edit {
-    width: 100% !important;
+    width: 100%;
   }
 
   &.split {
@@ -154,9 +154,7 @@ html {
   }
 
   &.view {
-    width: 0 !important;
-    padding: 0;
-    padding-left: 0;
+    display: none;
   }
 
   flex-grow: 0;
@@ -188,9 +186,7 @@ html {
   padding: 12px;
 
   &.edit {
-    width: 0 !important;
-    padding: 0;
-    padding-left: 0;
+    display: none;
   }
 
   &.split {
@@ -198,7 +194,7 @@ html {
   }
 
   &.view {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
