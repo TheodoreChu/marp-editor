@@ -203,13 +203,6 @@ html {
   &.view.success {
     text-align: center;
   }
-  a {
-    color: var(--sn-stylekit-info-color);
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
 }
 
 #marp-content {
