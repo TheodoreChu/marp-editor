@@ -1,0 +1,13 @@
+{
+  "identifier": "com.marp-editor.demo",
+  "name": "Marp Editor",
+  "content_type": "SN|Component",
+  "area": "editor-editor",
+  "version": "0.1.0",
+  "description": "Create presentation slides with Marpit Markdown",
+  "url": "http://localhost:3000/index.html",
+  "download_url": "",
+  "latest_url": "",
+  "marketing_url": "https://github.com/theodorechu/marp-editor",
+  "thumbnail_url": ""
+}

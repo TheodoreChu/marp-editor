@@ -1,0 +1,40 @@
+{
+  "short_name": "Marp Editor",
+  "name": "Marp Editor for Standard Notes",
+  "icons": [
+    {
+      "src": "ic-file-ppt-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "ic-file-ppt-24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "ic-file-ppt-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "ic-file-ppt-64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "ic-file-ppt-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "ic-file-ppt-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
