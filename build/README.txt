@@ -52,6 +52,65 @@ The Marp Editor is built with React, TypeScript, Sass, and [Marp](https://marp.a
 
 After you have installed the editor on the web or desktop app, it will automatically sync to your [mobile app](https://standardnotes.org/download) after you sign in.
 
+## Example
+
+Paste this into the Marp Editor to see an example of what you can do with it:
+
+````md
+---
+marp: true
+theme: gaia
+_class: lead
+paginate: true
+backgroundColor: #fff
+backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+---
+
+# **Marp Editor for Standard Notes**
+
+Powered by [Marp](https://marp.app), a Markdown Presentation Ecosystem
+
+https://marpeditor.com
+
+---
+
+# How to write slides
+
+Split pages by horizontal ruler (`---`). It's very simple! :slightly_smiling_face:
+
+```md
+# Slide 1
+
+Text for Slide 1
+
+---
+
+# Slide 2
+
+Text for Slide 2
+```
+
+---
+
+# Features
+
+- Create presentation slides using [Marpit Markdown](https://marpit.marp.app/markdown).
+- Three modes: Edit, Split, and View.
+- Button to download the slides as an HTML file
+  - HTML file comes with presentation tools: buttons for previous slide, next slide, toggle fullscreen, and open presenter view.
+    - Provided by Bespoke and Screenfull as is usually included by Marp.
+- Button to print the slides. To save the slides as a PDF, use Microsoft Edge or Chrome.
+
+---
+
+# Features Continued
+
+- CommonMark provided by Markdown-It
+- Inline HTML and CSS
+- Math provided by $\KaTeX$
+- GitHub Emoji support :smile:
+````
+
 ## Development
 
 **Prerequisites:** Install [Node.js](https://nodejs.org/en/), [Yarn](https://classic.yarnpkg.com/en/docs/install/), and [Git](https://github.com/git-guides/install-git) on your computer.
