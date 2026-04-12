@@ -38,9 +38,6 @@ The Marp Editor is built with React, TypeScript, Sass, and [Marp](https://marp.a
 2. In the bottom left corner of the app, click **Extensions**.
 3. Click **Import Extension**.
 4. Paste this into the input box:
-   ```
-   https://notes.theochu.com/p/PvmDopgufD
-   ```
    or paste this into the input box on **desktop**:
    ```
    https://raw.githubusercontent.com/TheodoreChu/marp-editor/main/public/demo.ext.json
@@ -200,8 +197,7 @@ Early stages of this editor were based heavily on the Standard Notes [Markdown B
 
 - [GitHub](https://github.com/TheodoreChu/marp-editor) for the source code of the Marp Editor
 - [GitHub Issues](https://github.com/TheodoreChu/marp-editor/issues) for reporting issues concerning the Marp Editor
-- [Docs](https://docs.theochu.com/marp-editor) for how to use the Marp Editor
-- [Contact](https://theochu.com/contact) for how to contact the developer of the Marp Editor
+- [Docs](https://github.com/TheodoreChu/marp-editor) for how to use the Marp Editor
 - [Marp Editor To do List](https://github.com/TheodoreChu/marp-editor/projects/1) for the roadmap of the Marp Editor
 - [Standard Notes Slack](https://standardnotes.org/slack) for connecting with the Standard Notes Community
 - [Standard Notes Help](https://standardnotes.org/help) for help with issues related to Standard Notes but unrelated to this editor
