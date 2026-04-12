@@ -4,8 +4,8 @@
 
 [![Release](https://img.shields.io/github/release/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/releases)
 [![License](https://img.shields.io/github/license/theodorechu/marp-editor?color=blue)](https://github.com/theodorechu/marp-editor/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/status-open%20beta-brightgreen.svg)](https://marpeditor.com/#installation)
-[![Cost](https://img.shields.io/badge/cost-free-darkgreen.svg)](https://marpeditor.com/#installation)
+[![Status](https://img.shields.io/badge/status-open%20beta-brightgreen.svg)](https://github.com/theodorechu/marp-editor/#installation)
+[![Cost](https://img.shields.io/badge/cost-free-darkgreen.svg)](https://github.com/theodorechu/marp-editor/#installation)
 [![GitHub issues](https://img.shields.io/github/issues/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/issues/)
 [![Slack](https://img.shields.io/badge/slack-standardnotes-CC2B5E.svg?style=flat&logo=slack)](https://standardnotes.org/slack)
 [![Downloads](https://img.shields.io/github/downloads/theodorechu/marp-editor/total.svg?style=flat)](https://github.com/theodorechu/marp-editor/releases)
@@ -17,7 +17,7 @@
 
 The Marp Editor is an **unofficial** [editor](https://standardnotes.org/help/77/what-are-editors) for [Standard Notes](https://standardnotes.org), a free, [open-source](https://standardnotes.org/knowledge/5/what-is-free-and-open-source-software), and [end-to-end encrypted](https://standardnotes.org/knowledge/2/what-is-end-to-end-encryption) notes app.
 
-Try the demo at [demo.marpeditor.com](https://demo.marpeditor.com) or learn more at [marpeditor.com](https://marpeditor.com).
+Try the demo at [theodorechu.github.io/marp-editor](https://theodorechu.github.io/marp-editor) or learn more at [github.com/theodorechu/marp-editor](https://github.com/theodorechu/marp-editor).
 
 The Marp Editor is used to create presentation slides using [Marpit Markdown](https://marpit.marp.app/markdown).
 
@@ -70,7 +70,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 Powered by [Marp](https://marp.app), a Markdown Presentation Ecosystem
 
-https://marpeditor.com
+https://github.com/theodorechu/marp-editor
 
 ---
 
