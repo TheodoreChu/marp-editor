@@ -4,8 +4,8 @@
 
 [![Release](https://img.shields.io/github/release/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/releases)
 [![License](https://img.shields.io/github/license/theodorechu/marp-editor?color=blue)](https://github.com/theodorechu/marp-editor/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/status-open%20beta-brightgreen.svg)](https://marpeditor.com/#installation)
-[![Cost](https://img.shields.io/badge/cost-free-darkgreen.svg)](https://marpeditor.com/#installation)
+[![Status](https://img.shields.io/badge/status-open%20beta-brightgreen.svg)](https://github.com/theodorechu/marp-editor/#installation)
+[![Cost](https://img.shields.io/badge/cost-free-darkgreen.svg)](https://github.com/theodorechu/marp-editor/#installation)
 [![GitHub issues](https://img.shields.io/github/issues/theodorechu/marp-editor.svg)](https://github.com/theodorechu/marp-editor/issues/)
 [![Slack](https://img.shields.io/badge/slack-standardnotes-CC2B5E.svg?style=flat&logo=slack)](https://standardnotes.org/slack)
 [![Downloads](https://img.shields.io/github/downloads/theodorechu/marp-editor/total.svg?style=flat)](https://github.com/theodorechu/marp-editor/releases)
@@ -17,7 +17,7 @@
 
 The Marp Editor is an **unofficial** [editor](https://standardnotes.org/help/77/what-are-editors) for [Standard Notes](https://standardnotes.org), a free, [open-source](https://standardnotes.org/knowledge/5/what-is-free-and-open-source-software), and [end-to-end encrypted](https://standardnotes.org/knowledge/2/what-is-end-to-end-encryption) notes app.
 
-Try the demo at [demo.marpeditor.com](https://demo.marpeditor.com) or learn more at [marpeditor.com](https://marpeditor.com).
+Try the demo at [theodorechu.github.io/marp-editor](https://theodorechu.github.io/marp-editor) or learn more at [github.com/theodorechu/marp-editor](https://github.com/theodorechu/marp-editor).
 
 The Marp Editor is used to create presentation slides using [Marpit Markdown](https://marpit.marp.app/markdown).
 
@@ -38,9 +38,6 @@ The Marp Editor is built with React, TypeScript, Sass, and [Marp](https://marp.a
 2. In the bottom left corner of the app, click **Extensions**.
 3. Click **Import Extension**.
 4. Paste this into the input box:
-   ```
-   https://notes.theochu.com/p/PvmDopgufD
-   ```
    or paste this into the input box on **desktop**:
    ```
    https://raw.githubusercontent.com/TheodoreChu/marp-editor/main/public/demo.ext.json
@@ -70,7 +67,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 
 Powered by [Marp](https://marp.app), a Markdown Presentation Ecosystem
 
-https://marpeditor.com
+https://github.com/theodorechu/marp-editor
 
 ---
 
@@ -200,8 +197,7 @@ Early stages of this editor were based heavily on the Standard Notes [Markdown B
 
 - [GitHub](https://github.com/TheodoreChu/marp-editor) for the source code of the Marp Editor
 - [GitHub Issues](https://github.com/TheodoreChu/marp-editor/issues) for reporting issues concerning the Marp Editor
-- [Docs](https://docs.theochu.com/marp-editor) for how to use the Marp Editor
-- [Contact](https://theochu.com/contact) for how to contact the developer of the Marp Editor
+- [Docs](https://github.com/TheodoreChu/marp-editor) for how to use the Marp Editor
 - [Marp Editor To do List](https://github.com/TheodoreChu/marp-editor/projects/1) for the roadmap of the Marp Editor
 - [Standard Notes Slack](https://standardnotes.org/slack) for connecting with the Standard Notes Community
 - [Standard Notes Help](https://standardnotes.org/help) for help with issues related to Standard Notes but unrelated to this editor

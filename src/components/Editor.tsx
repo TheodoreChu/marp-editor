@@ -498,7 +498,7 @@ export default class MarpEditor extends React.Component<{}, EditorInterface> {
             </div>
           </div>
           <a
-            href="https://marpeditor.com"
+            href="https://github.com/theodorechu/marp-editor"
             target="_blank"
             rel="noopener noreferrer"
             tabIndex={-1}
